@@ -1,0 +1,15 @@
+# Dongshin Kim, 2018-05-01 18:00
+include_directories (${xti300_driver_SOURCE_DIR}/src)
+link_directories (${xti300_driver_BINARY_DIR}/src)
+set (LIBS lib)
+foreach (lib ${LIBS})
+	add_library (${lib} ${lib}.cpp)
+endforeach (lib)
+set (CORELIBS )
+add_executable (xti300_drv xti300.cpp)
+target_link_libraries (xti300_drv ${CORELIBS} ${LIBS} )
+# for debugging --- print out all variable names:
+# get_cmake_property(_variableNames VARIABLES)
+# foreach (_variableName ${_variableNames})
+#    message(STATUS "${_variableName}=${${_variableName}}")
+# endforeach()
