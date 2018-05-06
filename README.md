@@ -27,23 +27,23 @@ Afterwards, your tree structure should look like this:
 
 [xti300_driver]$ tree -L 2
 
-├── CMakeLists.txt
-├── include
-│   ├── conio.h
-│   ├── deviceclass.h
-│   ├── ImuData.h
-│   ├── xcommunication
-│   ├── xticommon.h
-│   └── xti_io.h
-├── README.md
-└── src
-    ├── CMakeLists.txt
-    ├── conio.c
-    ├── deviceclass.cpp
-    ├── ImuData.cpp
-    ├── xcommunication
-    ├── xti300.cpp
-    └── xti_io.cpp
+ ├── CMakeLists.txt
+ ├── include
+ │   ├── conio.h
+ │   ├── deviceclass.h
+ │   ├── ImuData.h
+ │   ├── xcommunication
+ │   ├── xticommon.h
+ │   └── xti_io.h
+ ├── README.md
+ └── src
+      ├── CMakeLists.txt
+      ├── conio.c
+      ├── deviceclass.cpp
+      ├── ImuData.cpp
+      ├── xcommunication
+      ├── xti300.cpp
+      └── xti_io.cpp
 
 
 
