@@ -23,33 +23,15 @@ To create an out-of-source build:
 
 Note that the last two commands are executed inside the build directory.
 
-Afterwards, your tree structure should look like this:
-
-[xti300_driver]$ tree -L 2
-
- ├── CMakeLists.txt
- ├── include
- │   ├── conio.h
- │   ├── deviceclass.h
- │   ├── ImuData.h
- │   ├── xcommunication
- │   ├── xticommon.h
- │   └── xti_io.h
- ├── README.md
- └── src
-      ├── CMakeLists.txt
-      ├── conio.c
-      ├── deviceclass.cpp
-      ├── ImuData.cpp
-      ├── xcommunication
-      ├── xti300.cpp
-      └── xti_io.cpp
-
-
-
-and you can execute the program in the xti300.cpp/build/src directory as follows:
+You can execute the program in the xti300.cpp/build/src directory as follows:
 
 	[xti300_driver/build/src]$ ./xti300_drv
+
+To use the library, you can simply call first init as follows if your xti sensor is attached to /dev/ttyUSB0.
+
+	xti.init("/dev/ttyUSB0");
+And call startCapture() as follows, then the library executes a loop queing imu data to m_data.
+	xti.startCapture();
 
 To create an in-source build,
 
