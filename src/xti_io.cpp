@@ -43,6 +43,9 @@ void xti_io::capture_loop()
 			imd.m_acceleration_y = acc1[1];
 			imd.m_acceleration_z = acc1[2];
 			m_data.push_back(imd);
+			if(m_data.size() > 50000){
+				m_data.pop_front();
+			}
 		}
 		msgs.clear();
 		XsTime::msleep(0);
