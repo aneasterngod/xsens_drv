@@ -25,20 +25,27 @@ Note that the last two commands are executed inside the build directory.
 
 Afterwards, your tree structure should look like this:
 
-	[xti300_driver]$ tree -L 2
+[xti300_driver]$ tree -L 2
 
-	.
-	|-- CMakeLists.txt
-	|-- README.md
-	|-- build
-	|   |-- CMakeCache.txt
-	|   |-- CMakeFiles
-	|   |-- Makefile
-	|   |-- cmake_install.cmake
-	|   |-- src
-	|-- src
-	  |-- CMakeLists.txt
-	  |-- xti300_driver
+├── CMakeLists.txt
+├── include
+│   ├── conio.h
+│   ├── deviceclass.h
+│   ├── ImuData.h
+│   ├── xcommunication
+│   ├── xticommon.h
+│   └── xti_io.h
+├── README.md
+└── src
+    ├── CMakeLists.txt
+    ├── conio.c
+    ├── deviceclass.cpp
+    ├── ImuData.cpp
+    ├── xcommunication
+    ├── xti300.cpp
+    └── xti_io.cpp
+
+
 
 and you can execute the program in the xti300.cpp/build/src directory as follows:
 
