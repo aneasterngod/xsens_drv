@@ -31,6 +31,7 @@ To use the library, you can simply call first init as follows if your xti sensor
 
 	xti.init("/dev/ttyUSB0");
 And call startCapture() as follows, then the library executes a loop queing imu data to m_data.
+
 	xti.startCapture();
 
 To create an in-source build,
