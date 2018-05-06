@@ -1,19 +1,6 @@
-#include <iostream>
-#include <iomanip>
-#include <stdexcept>
-#include <string>
-
-#include <xsens/xsportinfoarray.h>
-#include <xsens/xsdatapacket.h>
-#include <xsens/xstime.h>
-#include <xcommunication/legacydatapacket.h>
-#include <xcommunication/int_xsdatapacket.h>
-#include <xcommunication/enumerateusbdevices.h>
-
-
-#include "deviceclass.h"
 #include "xticommon.h"
-#include "conio.h"
+#include "deviceclass.h"
+#include "ImuData.h"
 
 
 class xti_io
@@ -21,8 +8,17 @@ class xti_io
   public:
     xti_io();
     ~xti_io();
-
+  private:
+    void capture_loop();
   public:
-  	DeviceClass m_device;
-  
+    void startCapture();
+    void init(char* dev);
+    void exitProgram();
+  private:
+   	DeviceClass m_device;
+    XsPortInfo m_mtPort;    
+    std::thread m_filethread;
+    std::thread m_capturethread;
+  public:
+    std::deque<ImuData> m_data;
 };

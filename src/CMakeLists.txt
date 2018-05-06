@@ -29,14 +29,27 @@ add_library(xcommunication
 /home/dongshin/code-workspace/xti300_driver/src/xcommunication/xswinusb.cpp
 )
 
-add_executable (xti300_drv 
-    xti300.cpp
+add_library(xti300
     xti_io.cpp
     deviceclass.cpp    
     conio.c
+    ImuData.cpp    
+)
+
+add_executable (xti300_drv 
+    xti300.cpp    
     )
 
 target_link_libraries(xti300_drv
     xstypes 
     xcommunication
+    xti300
 )
+target_link_libraries(xti300
+    xcommunication
+)
+
+install (TARGETS xti300 DESTINATION lib)
+install (FILES 
+    ../include/xti_io.h     
+    DESTINATION include)
