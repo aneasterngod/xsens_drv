@@ -58,25 +58,25 @@ install (FILES
     ../include/ImuData.h
     DESTINATION include)
 install (FILES 
-./include/xcommunication/enumerateusbdevices.h
-./include/xcommunication/int_xsdatapacket.h
-./include/xcommunication/iointerface.h
-./include/xcommunication/iointerfacefile.h
-./include/xcommunication/iprotocolhandler.h
-./include/xcommunication/legacydatapacket.h
-./include/xcommunication/messagelocation.h
-./include/xcommunication/mtwsdidata.h
-./include/xcommunication/packetfixeddata.h
-./include/xcommunication/packetstamper.h
-./include/xcommunication/protocolhandler.h
-./include/xcommunication/rx_tx_log.h
-./include/xcommunication/serialinterface.h
-./include/xcommunication/streaminterface.h
-./include/xcommunication/synclinegmt.h
-./include/xcommunication/synclinemk4.h
-./include/xcommunication/usbinterface.h
-./include/xcommunication/xcommunicationconfig.h
-./include/xcommunication/xslibusb.h
-./include/xcommunication/xsudev.h
-./include/xcommunication/xswinusb.h
+../include/xcommunication/enumerateusbdevices.h
+../include/xcommunication/int_xsdatapacket.h
+../include/xcommunication/iointerface.h
+../include/xcommunication/iointerfacefile.h
+../include/xcommunication/iprotocolhandler.h
+../include/xcommunication/legacydatapacket.h
+../include/xcommunication/messagelocation.h
+../include/xcommunication/mtwsdidata.h
+../include/xcommunication/packetfixeddata.h
+../include/xcommunication/packetstamper.h
+../include/xcommunication/protocolhandler.h
+../include/xcommunication/rx_tx_log.h
+../include/xcommunication/serialinterface.h
+../include/xcommunication/streaminterface.h
+../include/xcommunication/synclinegmt.h
+../include/xcommunication/synclinemk4.h
+../include/xcommunication/usbinterface.h
+../include/xcommunication/xcommunicationconfig.h
+../include/xcommunication/xslibusb.h
+../include/xcommunication/xsudev.h
+../include/xcommunication/xswinusb.h
     DESTINATION include/xcommunication)
