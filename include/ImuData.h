@@ -1,5 +1,4 @@
-#include "xticommon.h"
-
+#include <stdint.h>
 class ImuData{
 public:
     ImuData();

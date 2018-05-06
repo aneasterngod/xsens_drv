@@ -22,6 +22,9 @@
 #include <unistd.h>
 
 #include "conio.h"
+#include "deviceclass.h"
+#include "ImuData.h"
+
 
 using namespace std;
 

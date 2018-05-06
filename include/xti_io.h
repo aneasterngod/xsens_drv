@@ -1,6 +1,5 @@
 #include "xticommon.h"
-#include "deviceclass.h"
-#include "ImuData.h"
+
 
 
 class xti_io
