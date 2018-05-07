@@ -1,13 +1,17 @@
 # Dongshin Kim, 2018-05-01 18:00
+# you have to set common_include and common_lib folder to specify any library needed in xti300_driver
+# maybe you don't need to set this thing up
+set(common_include )
+set(common_lib )
 include_directories (
     ${xti300_driver_SOURCE_DIR}/src
     ${xti300_driver_SOURCE_DIR}/include
-    /home/dongshin/Shares/include
+    ${common_include}
 )
 
 link_directories (
     ${xti300_driver_BINARY_DIR}/src
-    /home/dongshin/Shares/lib64
+    ${common_lib}
 )
 
 add_library(xcommunication
