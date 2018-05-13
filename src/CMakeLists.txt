@@ -52,6 +52,7 @@ target_link_libraries(xti300
     xstypes 
 )
 
+install (TARGETS xcommunication EXPORT xcommunication-targets DESTINATION lib)
 install (TARGETS xti300 EXPORT xti300-targets DESTINATION lib)
 install (FILES 
     ../include/xti_io.h  
@@ -84,4 +85,5 @@ install (FILES
 ../include/xcommunication/xswinusb.h
     DESTINATION include/xcommunication)
 install(EXPORT xti300-targets DESTINATION lib/xti300)
+install(EXPORT xcommunication-targets DESTINATION lib/xti300)
 install(FILES xti300Config.cmake DESTINATION lib/xti300)
