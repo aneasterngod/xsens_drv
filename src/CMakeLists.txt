@@ -1,8 +1,13 @@
 # Dongshin Kim, 2018-05-01 18:00
 # you have to set common_include and common_lib folder to specify any library needed in xti300_driver
 # maybe you don't need to set this thing up
-set(common_include )
-set(common_lib )
+set(common_lib /home/dongshin/Shares/lib)
+set(common_include 
+    /home/dongshin/Shares/include
+    /home/dongshin/Shares/mvIMPACT
+)
+
+
 include_directories (
     ${xti300_driver_SOURCE_DIR}/src
     ${xti300_driver_SOURCE_DIR}/include
