@@ -53,7 +53,7 @@ target_link_libraries(xti300
     xcommunication
 )
 
-install (TARGETS xti300 DESTINATION lib)
+install (TARGETS xti300 EXPORT mvbluefox2-targets DESTINATION lib)
 install (FILES 
     ../include/xti_io.h  
     ../include/xticommon.h   
@@ -84,3 +84,5 @@ install (FILES
 ../include/xcommunication/xsudev.h
 ../include/xcommunication/xswinusb.h
     DESTINATION include/xcommunication)
+install(EXPORT xti300-targets DESTINATION lib/xti300)
+install(FILES xti300Config.cmake DESTINATION lib/xti300)
