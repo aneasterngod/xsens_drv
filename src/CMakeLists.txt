@@ -45,11 +45,11 @@ add_executable (xti300_drv
     )
 
 target_link_libraries(xti300_drv
-    xstypes 
-    xcommunication
     xti300
 )
 target_link_libraries(xti300
+    xcommunication
+    xstypes 
     xcommunication
 )
 
