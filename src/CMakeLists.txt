@@ -50,7 +50,6 @@ target_link_libraries(xti300_drv
 target_link_libraries(xti300
     xcommunication
     xstypes 
-    xcommunication
 )
 
 install (TARGETS xti300 EXPORT xti300-targets DESTINATION lib)
