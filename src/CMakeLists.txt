@@ -67,11 +67,11 @@ install (TARGETS xti300 EXPORT xti300-targets LIBRARY DESTINATION lib)
 
 
 install (FILES 
-    ../include/xti300/xti_io.h  
-    ../include/xti300/xticommon.h   
-    ../include/xti300/deviceclass.h
-    ../include/xti300/conio.h   
-    ../include/xti300/ImuData.h
+    ../include/xti_io.h  
+    ../include/xticommon.h   
+    ../include/deviceclass.h
+    ../include/conio.h   
+    ../include/ImuData.h
     DESTINATION include)
 	
 install (FILES 
