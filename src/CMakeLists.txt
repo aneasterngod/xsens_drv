@@ -7,7 +7,7 @@ set(xsens_INC_DIR /home/dongshin/Shares/include
 set(xsens_LIB_DIR /home/dongshin/Shares/lib
     CACHE PATH "the root lib directory that contains mvIMPACT libraries" )
 
-set(INCLUDE_INSTALL_DIR include/ )
+set(INCLUDE_INSTALL_DIR include/xti300 )
 set(LIB_INSTALL_DIR lib/ )
 
 
@@ -67,11 +67,11 @@ install (TARGETS xti300 EXPORT xti300-targets LIBRARY DESTINATION lib)
 
 
 install (FILES 
-    ../include/xti_io.h  
-    ../include/xticommon.h   
-    ../include/deviceclass.h
-    ../include/conio.h   
-    ../include/ImuData.h
+    ../include/xti300/xti_io.h  
+    ../include/xti300/xticommon.h   
+    ../include/xti300/deviceclass.h
+    ../include/xti300/conio.h   
+    ../include/xti300/ImuData.h
     DESTINATION include)
 	
 install (FILES 
