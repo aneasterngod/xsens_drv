@@ -62,7 +62,7 @@ target_link_libraries(xti300_drv
 )
 
 
-install (TARGETS xcommunication EXPORT xcommunication-targets LIBRARY DESTINATION lib)
+install (TARGETS xcommunication EXPORT xcommunication-targets ARCHIVE DESTINATION lib)
 install (TARGETS xti300 EXPORT xti300-targets LIBRARY DESTINATION lib)
 
 
