@@ -41,7 +41,7 @@ add_library(xcommunication
 	xcommunication/xswinusb.cpp
 )
 
-add_library(xti300 SHARED
+add_library(xti300
     xti_io.cpp
     deviceclass.cpp    
     conio.c
@@ -63,7 +63,7 @@ target_link_libraries(xti300_drv
 
 
 install (TARGETS xcommunication EXPORT xcommunication-targets ARCHIVE DESTINATION lib)
-install (TARGETS xti300 EXPORT xti300-targets LIBRARY DESTINATION lib)
+install (TARGETS xti300 EXPORT xti300-targets ARCHIVE DESTINATION lib)
 
 
 install (FILES 
