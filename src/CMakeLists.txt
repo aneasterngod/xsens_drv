@@ -4,7 +4,7 @@
 
 set(xsens_INC_DIR /home/dongshin/Shares/include
     CACHE PATH "the root include directory that contains mvIMPACT header files" )
-set(xsens_LIB_DIR /home/dongshin/Shares/lib
+set(xsens_LIB_DIR /home/dongshin/Shares/lib64
     CACHE PATH "the root lib directory that contains mvIMPACT libraries" )
 
 set(INCLUDE_INSTALL_DIR include/xti300 )
