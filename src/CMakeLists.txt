@@ -22,7 +22,7 @@ link_directories (
     ${xsens_LIB_DIR}
 )
 
-add_library(xcommunication SHARED
+add_library(xcommunication
 	xcommunication/enumerateusbdevices.cpp
 	xcommunication/int_xsdatapacket.cpp
 	xcommunication/iointerface.cpp
