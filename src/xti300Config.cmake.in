@@ -1,4 +1,4 @@
-set(XTI300_VERSION x.y.z)
+set(XTI300_VERSION 1.0.0)
 
 @PACKAGE_INIT@
 
