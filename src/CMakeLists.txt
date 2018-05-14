@@ -72,7 +72,7 @@ install (FILES
     ../include/deviceclass.h
     ../include/conio.h   
     ../include/ImuData.h
-    DESTINATION include)
+    DESTINATION include/xti300)
 	
 install (FILES 
 	../include/xcommunication/enumerateusbdevices.h
