@@ -1,6 +1,6 @@
+#ifndef XTI300_IO
+#define XTI300_IO
 #include "xticommon.h"
-
-
 
 class xti_io
 {
@@ -21,3 +21,5 @@ class xti_io
   public:
     std::deque<ImuData> m_data;
 };
+
+#endif
