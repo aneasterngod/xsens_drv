@@ -1,3 +1,6 @@
+#ifndef IMUDATA
+#define IMUDATA
+
 #include <stdint.h>
 class ImuData{
 public:
@@ -12,3 +15,5 @@ public:
     double m_acceleration_y;
     double m_acceleration_z;
 };
+
+#endif
