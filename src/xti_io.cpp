@@ -57,7 +57,7 @@ void xti_io::startCapture()
 	m_capturethread = std::thread(&xti_io::capture_loop, this);
 }
 
-bool xti_io::init(char *dev)
+bool xti_io::init(const char *dev)
 {
 	try
 	{
