@@ -57,7 +57,7 @@ void xti_io::startCapture()
 	m_capturethread = std::thread(&xti_io::capture_loop, this);
 }
 
-void xti_io::init(char *dev)
+bool xti_io::init(char *dev)
 {
 	try
 	{
@@ -70,15 +70,18 @@ void xti_io::init(char *dev)
 		if (!m_device.openPort(m_mtPort))
 		{
 			throw std::runtime_error("Could not open port. Aborting.");
+			return false;
 		}
 		if (!m_device.gotoConfig()) // Put the device into configuration mode before configuring the device
 		{
 			throw std::runtime_error("Could not put device into configuration mode. Aborting.");
+			return false;
 		}
 		m_mtPort.setDeviceId(m_device.getDeviceId());
 		if (!m_mtPort.deviceId().isMt9c() && !m_mtPort.deviceId().isLegacyMtig() && !m_mtPort.deviceId().isMtMk4() && !m_mtPort.deviceId().isFmt_X000())
 		{
 			throw std::runtime_error("No MTi / MTx / MTmk4 device found. Aborting.");
+			return false;
 		}
 		try
 		{
@@ -92,6 +95,7 @@ void xti_io::init(char *dev)
 				if (!m_device.setDeviceMode(outputMode, outputSettings))
 				{
 					throw std::runtime_error("Could not configure MT device. Aborting.");
+					return false;
 				}
 			}
 			else if (m_mtPort.deviceId().isMtMk4() || m_mtPort.deviceId().isFmt_X000())
@@ -105,34 +109,42 @@ void xti_io::init(char *dev)
 				{
 
 					throw std::runtime_error("Could not configure MTmk4 device. Aborting.");
+					return false;
 				}
 			}
 			else
 			{
 				throw std::runtime_error("Unknown device while configuring. Aborting.");
+				return false;
 			}
 
 			// Put the device in measurement mode
 			if (!m_device.gotoMeasurement())
 			{
 				throw std::runtime_error("Could not put device into measurement mode. Aborting.");
+				return false;
 			}
 		}
 		catch (std::runtime_error const &error)
 		{
 			cout << error.what() << endl;
+			return false;
 		}
 		catch (...)
 		{
 			cout << "An unknown fatal error has occured. Aborting." << endl;
+			return false;
 		}
 	}
 	catch (std::runtime_error const &error)
 	{
 		cout << error.what() << endl;
+		return false;
 	}
 	catch (...)
 	{
 		cout << "An unknown fatal error has occured. Aborting." << endl;
+		return false;
 	}
+	return true;
 }
