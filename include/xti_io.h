@@ -11,7 +11,7 @@ class xti_io
     void capture_loop();
   public:
     void startCapture();
-    void init(char* dev);
+    bool init(char* dev);
     void exitProgram();
   private:
    	DeviceClass m_device;
