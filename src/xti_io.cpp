@@ -22,6 +22,7 @@ void xti_io::capture_loop()
 	{
 		m_device.readDataToBuffer(data);
 		m_device.processBufferedData(data, msgs);
+
 		for (XsMessageArray::iterator it = msgs.begin(); it != msgs.end(); ++it)
 		{
 			// Retrieve a packet
@@ -33,17 +34,27 @@ void xti_io::capture_loop()
 			packet.setMessage((*it));
 			packet.setDeviceId(m_mtPort.deviceId());
 
-			// Convert packet to euler
-			XsEuler euler = packet.orientationEuler();
-			imd.m_rotation_x = euler.roll();
-			imd.m_rotation_y = euler.pitch();
-			imd.m_rotation_z = euler.yaw();
-			XsVector acc1 = packet.calibratedAcceleration();
-			imd.m_acceleration_x = acc1[0];
-			imd.m_acceleration_y = acc1[1];
-			imd.m_acceleration_z = acc1[2];
+			if (packet.containsCalibratedGyroscopeData())
+			{
+				XsVector gyroscope = packet.calibratedGyroscopeData();
+				imd.m_rotation_x = gyroscope.at(0);
+				imd.m_rotation_y = gyroscope.at(1);
+				imd.m_rotation_z = gyroscope.at(2);
+			}
+
+			// Get the acceleration data
+			if (packet.containsCalibratedAcceleration())
+			{
+				XsVector acceleration = packet.calibratedAcceleration();
+
+				imd.m_acceleration_x = acceleration.at(0);
+				imd.m_acceleration_y = acceleration.at(1);
+				imd.m_acceleration_z = acceleration.at(2);
+			}
+
 			m_data.push_back(imd);
-			if(m_data.size() > 50000){
+			if (m_data.size() > 50000)
+			{
 				m_data.pop_front();
 			}
 		}
@@ -87,21 +98,11 @@ bool xti_io::init(const char *dev)
 		{
 			// Print information about detected MTi / MTx / MTmk4 device
 			cout << "Device: " << m_device.getProductCode().toStdString() << " opened." << endl;
-			if (m_mtPort.deviceId().isMt9c() || m_mtPort.deviceId().isLegacyMtig())
-			{
-				XsOutputMode outputMode = XOM_Orientation | XOM_Velocity;
-				XsOutputSettings outputSettings = XOS_OrientationMode_Euler; // output orientation data as euler
-				// set the device configuration
-				if (!m_device.setDeviceMode(outputMode, outputSettings))
-				{
-					throw std::runtime_error("Could not configure MT device. Aborting.");
-					return false;
-				}
-			}
-			else if (m_mtPort.deviceId().isMtMk4() || m_mtPort.deviceId().isFmt_X000())
+			if (m_mtPort.deviceId().isMtMk4() || m_mtPort.deviceId().isFmt_X000())
 			{
 				XsOutputConfiguration acc(XDI_Acceleration, 1000);
 				XsOutputConfiguration rot(XDI_RateOfTurn, 1000);
+				//XsOutputConfiguration rot(XDI_RawGyr, 1000);
 				XsOutputConfigurationArray configArray;
 				configArray.push_back(acc);
 				configArray.push_back(rot);
