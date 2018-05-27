@@ -101,7 +101,7 @@ bool xti_io::init(const char *dev)
 			else if (m_mtPort.deviceId().isMtMk4() || m_mtPort.deviceId().isFmt_X000())
 			{
 				XsOutputConfiguration acc(XDI_Acceleration, 1000);
-				XsOutputConfiguration rot(XDI_EulerAngles, 1000);
+				XsOutputConfiguration rot(XDI_RateOfTurn, 1000);
 				XsOutputConfigurationArray configArray;
 				configArray.push_back(acc);
 				configArray.push_back(rot);
