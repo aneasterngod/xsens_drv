@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/xcommunication/synclinegmt.h
+xsens/xssyncline.h
+-
+
+../include/xcommunication/synclinemk4.h
+xsens/xssyncline.h
+-
+
+../include/xsens/xssyncline.h
+
+/home/dongshin/code-repository/xti300_driver/src/xcommunication/synclinegmt.c
+synclinegmt.h
+/home/dongshin/code-repository/xti300_driver/src/xcommunication/synclinegmt.h
+
+/home/dongshin/code-repository/xti300_driver/src/xcommunication/synclinemk4.c
+synclinemk4.h
+/home/dongshin/code-repository/xti300_driver/src/xcommunication/synclinemk4.h
+

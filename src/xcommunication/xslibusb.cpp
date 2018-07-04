@@ -1,4 +1,4 @@
-/*	Copyright (c) 2003-2017 Xsens Technologies B.V. or subsidiaries worldwide.
+/*	Copyright (c) 2003-2016 Xsens Technologies B.V. or subsidiaries worldwide.
 	All rights reserved.
 
 	Redistribution and use in source and binary forms, with or without modification,
@@ -26,7 +26,7 @@
 	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include "xcommunication/xslibusb.h"
+#include "xslibusb.h"
 #include <xsens/xslibraryloader.h>
 
 #ifdef HAVE_LIBUSB

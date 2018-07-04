@@ -1,4 +1,4 @@
-/*	Copyright (c) 2003-2017 Xsens Technologies B.V. or subsidiaries worldwide.
+/*	Copyright (c) 2003-2016 Xsens Technologies B.V. or subsidiaries worldwide.
 	All rights reserved.
 
 	Redistribution and use in source and binary forms, with or without modification,
@@ -27,7 +27,7 @@
 */
 
 #include <xsens/xsdataformat.h>
-#include "xcommunication/packetfixeddata.h"
+#include "packetfixeddata.h"
 
 #ifdef LOG_PACKET
 #	include "xslog.h"

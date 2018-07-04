@@ -1,4 +1,4 @@
-/*	Copyright (c) 2003-2017 Xsens Technologies B.V. or subsidiaries worldwide.
+/*	Copyright (c) 2003-2016 Xsens Technologies B.V. or subsidiaries worldwide.
 	All rights reserved.
 
 	Redistribution and use in source and binary forms, with or without modification,
@@ -124,9 +124,8 @@ The common way to setup configuration-dependent defines:
 #if defined(XSENS_DEBUG) && !defined(JLLOGLEVEL)
 	//// Debug or RelWithDeb build
 	//#define LOG_RX_TX			// Lowest level byte receive and send (binary log)
-	//#define LOG_RX_TX_UNIQUE	// Use unique file names for rx/tx logs
+	//#define LOG_RX_TX_UNIQUE	// Use incremental unique file names for rx/tx logs
 	//#define LOG_RX_TX_FLUSH		// Flush after each log operation (can cause hickups in timing, 300ms is not unheard of)
-	#define LOG_RX_TX_PER_STATE	// Use new unique log file after switching to a new state (config/measurement/operational/recording) for rx/tx logs, override LOG_RX_TX_UNIQUE, automatically disabled if LOG_RX_TX is disabled
 
 	#if defined(XSENS_RELEASE)
 		//// RelWithDeb build
@@ -162,10 +161,6 @@ The common way to setup configuration-dependent defines:
 		#define JLNOLINEINFO
 	#endif
 #	endif
-#endif
-
-#if defined(LOG_RX_TX_PER_STATE) && defined(LOG_RX_TX_UNIQUE)
-#undef LOG_RX_TX_UNIQUE
 #endif
 
 //////////////////////////////////////////////////

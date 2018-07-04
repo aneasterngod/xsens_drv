@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/conio.h
+
+/home/dongshin/code-repository/xti300_driver/src/conio.c
+sys/select.h
+-
+stdio.h
+-
+unistd.h
+-
+termios.h
+-
+conio.h
+/home/dongshin/code-repository/xti300_driver/src/conio.h
+

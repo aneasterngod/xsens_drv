@@ -2,10 +2,6 @@
 # you have to set common_include and common_lib folder to specify any library needed in xti300_driver
 # maybe you don't need to set this thing up
 
-set(xsens_INC_DIR /home/dongshin/Shares/include
-    CACHE PATH "the root include directory that contains mvIMPACT header files" )
-set(xsens_LIB_DIR /home/dongshin/Shares/lib64
-    CACHE PATH "the root lib directory that contains mvIMPACT libraries" )
 
 set(INCLUDE_INSTALL_DIR include/xti300 )
 set(LIB_INSTALL_DIR lib/ )
@@ -13,13 +9,13 @@ set(LIB_INSTALL_DIR lib/ )
 
 include_directories (
     ${xti300_driver_SOURCE_DIR}/src
-    ${xti300_driver_SOURCE_DIR}/include
-	${xsens_INC_DIR}
+	${xti300_driver_SOURCE_DIR}/include
+	${xti300_driver_SOURCE_DIR}/include/xcommunication
+	${xti300_driver_SOURCE_DIR}/include/xsens
 )
 
 link_directories (
     ${xti300_driver_BINARY_DIR}/src
-    ${xsens_LIB_DIR}
 )
 
 add_library(xcommunication
@@ -39,6 +35,55 @@ add_library(xcommunication
 	xcommunication/xslibusb.cpp
 	xcommunication/xsudev.cpp
 	xcommunication/xswinusb.cpp
+)
+
+add_library(xstypes
+	xstypes/datapacket_p.cpp
+	xstypes/xsarray.c
+	xstypes/xsbaud.c
+	xstypes/xsbytearray.c
+	xstypes/xscalibrateddata.c
+	xstypes/xsdatapacket.cpp
+	xstypes/xsdeviceid.c
+	xstypes/xsdeviceidarray.c
+	xstypes/xseuler.c
+	xstypes/xsfile.c
+	xstypes/xsgpspvtdata.c
+	xstypes/xsint64array.c
+	xstypes/xsintarray.c
+	xstypes/xslibraryloader.c
+	xstypes/xsmalloc.c
+	xstypes/xsmath.c
+	xstypes/xsmatrix.c
+	xstypes/xsmatrix3x3.c
+	xstypes/xsmessage.c
+	xstypes/xsmessagearray.c
+	xstypes/xsoutputconfiguration.c
+	xstypes/xsoutputconfigurationarray.c
+	xstypes/xsportinfo.c
+	xstypes/xsportinfoarray.c
+	xstypes/xsquaternion.c
+	xstypes/xsrange.c
+	xstypes/xsresultvalue.c
+	xstypes/xsrssi.c
+	xstypes/xssdidata.c
+	xstypes/xssimpleversion.c
+	xstypes/xssnapshot.c
+	xstypes/xssocket.c
+	xstypes/xsstring.c
+	xstypes/xsstringarray.c
+	xstypes/xssyncsetting.c
+	xstypes/xssyncsettingarray.c
+	xstypes/xsthread.c
+	xstypes/xstime.c
+	xstypes/xstimestamp.c
+	xstypes/xstriggerindicationdata.c
+	xstypes/xstypedefs.c
+	xstypes/xstypesdynlib.c
+	xstypes/xsutctime.c
+	xstypes/xsvector.c
+	xstypes/xsvector3.c
+	xstypes/xsversion.c
 )
 
 add_library(xti300

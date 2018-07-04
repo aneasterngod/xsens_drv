@@ -1,4 +1,4 @@
-/*	Copyright (c) 2003-2017 Xsens Technologies B.V. or subsidiaries worldwide.
+/*	Copyright (c) 2003-2016 Xsens Technologies B.V. or subsidiaries worldwide.
 	All rights reserved.
 
 	Redistribution and use in source and binary forms, with or without modification,
@@ -27,7 +27,7 @@
 */
 
 #include <xsens/xsdatapacket.h>
-#include "xcommunication/packetstamper.h"
+#include "packetstamper.h"
 
 /*! \class PacketStamper
 	\brief Supplies functionality for timestamping data packets.
@@ -53,8 +53,9 @@ const int64_t PacketStamper::SC8BOUNDARY = 0x00000100LL;
 */
 int64_t PacketStamper::calculateLargePacketCounter(int64_t frameCounter, int64_t lastCounter, int64_t boundary)
 {
-	if (lastCounter < 0)
+	if (lastCounter < 0) {
 		return frameCounter;
+	}
 
 	const int64_t lowMask = boundary - 1;
 	const int64_t boundaryHalf = boundary / 2;
@@ -124,9 +125,9 @@ int64_t PacketStamper::stampPacket(XsDataPacket& pack, XsDataPacket& highestPack
 */
 int64_t PacketStamper::calculateLargeSampleTime(int64_t frameTime, int64_t lastTime)
 {
-	if (lastTime < 0)
+	if (lastTime < 0) {
 		return frameTime;
-
+	}
 	int64_t low = lastTime % 864000000;
 	int64_t dt = frameTime - low;
 	if (dt < (-864000000/2))

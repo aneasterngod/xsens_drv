@@ -1,4 +1,4 @@
-/*	Copyright (c) 2003-2017 Xsens Technologies B.V. or subsidiaries worldwide.
+/*	Copyright (c) 2003-2016 Xsens Technologies B.V. or subsidiaries worldwide.
 	All rights reserved.
 
 	Redistribution and use in source and binary forms, with or without modification,
@@ -28,12 +28,11 @@
 
 #include <xsens/xsthread.h>
 #include <xsens/xsportinfo.h>
-#include "xcommunication/usbinterface.h"
+#include "usbinterface.h"
 #include <errno.h>
 
-#include "xcommunication/xswinusb.h"
-#include "xcommunication/xslibusb.h"
-#include "xcommunication/rx_tx_log.h"
+#include "xswinusb.h"
+#include "xslibusb.h"
 
 #ifndef _WIN32
 #	include <string.h>		// strcpy
@@ -851,7 +850,7 @@ XsResultValue UsbInterface::readData(XsSize maxLength, XsByteArray& data)
 	\returns XRV_OK if no error occurred. It can be that no data is available and XRV_OK will be
 			returned. Check *length for the number of bytes that were read.
 */
-XsResultValue UsbInterface::readData(const XsSize maxLength, void *data, XsSize* length)
+XsResultValue UsbInterface::readData (const XsSize maxLength, void *data, XsSize* length)
 {
 	JLTRACE(gJournal, "maxLength=" << maxLength << ", data=" << JLHEXLOG(data) << ", length=" << JLHEXLOG(length));
 	XsSize ln;
@@ -894,8 +893,6 @@ XsResultValue UsbInterface::readData(const XsSize maxLength, void *data, XsSize*
 #ifdef LOG_RX_TX
 	if (*length > 0)
 	{
-		CHECK_STATE_RX(*length, data, d->rx_log);
-
 		if (!d->rx_log.isOpen())
 		{
 			char fname[XS_MAX_FILENAME_LENGTH];
@@ -1076,8 +1073,6 @@ XsResultValue UsbInterface::writeData(const XsSize length, const void *data, XsS
 #ifdef LOG_RX_TX
 	if (*written > 0)
 	{
-		CHECK_STATE_TX(*written, data, d->tx_log);
-
 		if (!d->tx_log.isOpen())
 		{
 			char fname[XS_MAX_FILENAME_LENGTH];

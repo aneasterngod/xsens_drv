@@ -1,4 +1,4 @@
-/*	Copyright (c) 2003-2017 Xsens Technologies B.V. or subsidiaries worldwide.
+/*	Copyright (c) 2003-2016 Xsens Technologies B.V. or subsidiaries worldwide.
 	All rights reserved.
 
 	Redistribution and use in source and binary forms, with or without modification,
@@ -26,8 +26,8 @@
 	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include "xcommunication/xcommunicationconfig.h"
-#include "xcommunication/enumerateusbdevices.h"
+#include "xcommunicationconfig.h"
+#include "enumerateusbdevices.h"
 
 #ifdef _WIN32
 #	include <windows.h>
@@ -41,7 +41,7 @@
 #	include <stdlib.h>
 #	include <string.h>
 #	include <dirent.h>
-#	include "xcommunication/xslibusb.h"
+#	include "xslibusb.h"
 #endif
 
 #ifdef _WIN32

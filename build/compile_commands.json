@@ -1,0 +1,337 @@
+[
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xstypes.dir/xstypes/datapacket_p.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xstypes/datapacket_p.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/datapacket_p.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsarray.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsarray.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsarray.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsbaud.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsbaud.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsbaud.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsbytearray.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsbytearray.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsbytearray.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xscalibrateddata.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xscalibrateddata.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xscalibrateddata.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xstypes.dir/xstypes/xsdatapacket.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsdatapacket.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsdatapacket.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsdeviceid.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsdeviceid.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsdeviceid.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsdeviceidarray.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsdeviceidarray.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsdeviceidarray.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xseuler.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xseuler.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xseuler.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsfile.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsfile.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsfile.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsgpspvtdata.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsgpspvtdata.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsgpspvtdata.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsint64array.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsint64array.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsint64array.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsintarray.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsintarray.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsintarray.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xslibraryloader.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xslibraryloader.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xslibraryloader.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsmalloc.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsmalloc.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsmalloc.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsmath.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsmath.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsmath.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsmatrix.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsmatrix.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsmatrix.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsmatrix3x3.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsmatrix3x3.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsmatrix3x3.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsmessage.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsmessage.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsmessage.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsmessagearray.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsmessagearray.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsmessagearray.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsoutputconfiguration.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsoutputconfiguration.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsoutputconfiguration.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsoutputconfigurationarray.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsoutputconfigurationarray.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsoutputconfigurationarray.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsportinfo.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsportinfo.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsportinfo.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsportinfoarray.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsportinfoarray.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsportinfoarray.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsquaternion.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsquaternion.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsquaternion.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsrange.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsrange.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsrange.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsresultvalue.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsresultvalue.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsresultvalue.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsrssi.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsrssi.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsrssi.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xssdidata.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xssdidata.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xssdidata.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xssimpleversion.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xssimpleversion.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xssimpleversion.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xssnapshot.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xssnapshot.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xssnapshot.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xssocket.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xssocket.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xssocket.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsstring.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsstring.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsstring.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsstringarray.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsstringarray.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsstringarray.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xssyncsetting.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xssyncsetting.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xssyncsetting.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xssyncsettingarray.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xssyncsettingarray.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xssyncsettingarray.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsthread.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsthread.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsthread.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xstime.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xstime.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xstime.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xstimestamp.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xstimestamp.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xstimestamp.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xstriggerindicationdata.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xstriggerindicationdata.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xstriggerindicationdata.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xstypedefs.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xstypedefs.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xstypedefs.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xstypesdynlib.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xstypesdynlib.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xstypesdynlib.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsutctime.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsutctime.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsutctime.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsvector.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsvector.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsvector.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsvector3.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsvector3.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsvector3.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xstypes.dir/xstypes/xsversion.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xstypes/xsversion.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xstypes/xsversion.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/enumerateusbdevices.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/enumerateusbdevices.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/enumerateusbdevices.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/int_xsdatapacket.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/int_xsdatapacket.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/int_xsdatapacket.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/iointerface.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/iointerface.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/iointerface.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/iointerfacefile.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/iointerfacefile.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/iointerfacefile.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/legacydatapacket.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/legacydatapacket.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/legacydatapacket.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/mtwsdidata.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/mtwsdidata.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/mtwsdidata.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/packetfixeddata.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/packetfixeddata.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/packetfixeddata.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/packetstamper.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/packetstamper.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/packetstamper.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/protocolhandler.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/protocolhandler.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/protocolhandler.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/serialinterface.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/serialinterface.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/serialinterface.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xcommunication.dir/xcommunication/synclinegmt.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/synclinegmt.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/synclinegmt.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xcommunication.dir/xcommunication/synclinemk4.c.o   -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/synclinemk4.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/synclinemk4.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/usbinterface.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/usbinterface.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/usbinterface.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/xslibusb.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/xslibusb.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/xslibusb.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/xsudev.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/xsudev.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/xsudev.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xcommunication.dir/xcommunication/xswinusb.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xcommunication/xswinusb.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xcommunication/xswinusb.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xti300.dir/xti_io.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xti_io.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xti_io.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xti300.dir/deviceclass.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/deviceclass.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/deviceclass.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/gcc-7  -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens  -g   -o CMakeFiles/xti300.dir/conio.c.o   -c /home/dongshin/code-repository/xti300_driver/src/conio.c",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/conio.c"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xti300.dir/ImuData.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/ImuData.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/ImuData.cpp"
+},
+{
+  "directory": "/home/dongshin/code-repository/xti300_driver/build/src",
+  "command": "/usr/bin/g++-7   -I/home/dongshin/code-repository/xti300_driver/src -I/home/dongshin/code-repository/xti300_driver/include -I/home/dongshin/code-repository/xti300_driver/include/xcommunication -I/home/dongshin/code-repository/xti300_driver/include/xsens   -std=c++11 -pthread -g   -o CMakeFiles/xti300_drv.dir/xti300.cpp.o -c /home/dongshin/code-repository/xti300_driver/src/xti300.cpp",
+  "file": "/home/dongshin/code-repository/xti300_driver/src/xti300.cpp"
+}
+]

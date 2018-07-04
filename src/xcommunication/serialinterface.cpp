@@ -1,4 +1,4 @@
-/*	Copyright (c) 2003-2017 Xsens Technologies B.V. or subsidiaries worldwide.
+/*	Copyright (c) 2003-2016 Xsens Technologies B.V. or subsidiaries worldwide.
 	All rights reserved.
 
 	Redistribution and use in source and binary forms, with or without modification,
@@ -26,10 +26,9 @@
 	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include "xcommunication/serialinterface.h"
+#include "serialinterface.h"
 #include <xsens/xsportinfo.h>
 #include <xsens/xscontrolline.h>
-#include "xcommunication/rx_tx_log.h"
 
 #include <errno.h>
 #ifndef _WIN32
@@ -522,6 +521,51 @@ XsResultValue SerialInterface::open(const XsPortInfo& portInfo,
 	return (m_lastResult = XRV_OK);
 }
 
+#ifdef LOG_RX_TX_UNIQUE
+/*! \brief Helper function for making filename of log file unique
+*/
+static bool doesFileExist(char* filename)
+{
+	FILE* pf = fopen(filename, "r");
+	if (pf == NULL)
+		return false;
+	fclose (pf);
+	return true;
+}
+#endif
+
+#ifdef LOG_RX_TX
+/*! \brief Helper function for making filename of log file unique
+*/
+static void makeFilenameUnique(char* filename)
+{
+#ifdef LOG_RX_TX_UNIQUE
+	if (doesFileExist(filename))	// if a file already exist with the same name,
+	{
+		// create a unique filename by adding a counter:
+		char filename2[XS_MAX_FILENAME_LENGTH];
+		char basename[XS_MAX_FILENAME_LENGTH];
+		strcpy(basename, filename);
+		basename[strlen(basename) - 4] = 0;	// remove .log extension
+		int counter = 1;
+		do
+		{
+			sprintf(filename2, "%s_%d.log", basename, counter++);
+			if (counter > 100)	// don't count further than 100
+			{
+				sprintf(filename2, "%s_n.log", basename);
+				break;
+			}
+		}
+		while (doesFileExist(filename2));
+		strcpy(filename, filename2);
+	}
+#else
+	(void)filename;
+#endif
+}
+#endif
+
 /*! \brief Read data from the serial port and put it into the data buffer.
 	\details This function reads up to \a maxLength bytes from the port (non-blocking) and
 	puts it into the \a data buffer.
@@ -620,8 +664,6 @@ XsResultValue SerialInterface::readData(XsSize maxLength, XsByteArray& data)
 #ifdef LOG_RX_TX
 	if (length > 0)
 	{
-		CHECK_STATE_RX(length, data, rx_log);
-
 		if (!rx_log.isOpen())
 		{
 			char fname[XS_MAX_FILENAME_LENGTH];
@@ -631,7 +673,7 @@ XsResultValue SerialInterface::readData(XsSize maxLength, XsByteArray& data)
 			char *devname = strrchr(m_portname, '/');
 			sprintf(fname, "rx_%s_%d.log", devname + 1, XsBaud::rateToNumeric(m_baudrate));
 #endif
-			makeFilenameUnique(fname, state);
+			makeFilenameUnique(fname);
 
 			rx_log.create(XsString(fname), true);
 		}
@@ -739,7 +781,7 @@ XsResultValue SerialInterface::waitForData(XsSize maxLength, XsByteArray& data)
 /*! \copydoc IoInterface::writeData
 	\note The default timeout is respected in this operation.
 */
-XsResultValue SerialInterface::writeData(const XsByteArray& data, XsSize* written)
+XsResultValue SerialInterface::writeData (const XsByteArray& data, XsSize* written)
 {
 	XsSize bytes;
 	if (written == NULL)
@@ -794,7 +836,6 @@ XsResultValue SerialInterface::writeData(const XsByteArray& data, XsSize* writte
 #ifdef LOG_RX_TX
 	if (written[0] > 0)
 	{
-		CHECK_STATE_TX(written[0], data, tx_log);
 		if (!tx_log.isOpen())
 		{
 			char fname[XS_MAX_FILENAME_LENGTH];
@@ -804,7 +845,7 @@ XsResultValue SerialInterface::writeData(const XsByteArray& data, XsSize* writte
 			char *devname = strrchr(m_portname, '/');
 			sprintf(fname,"tx_%s_%d.log", devname + 1, XsBaud::rateToNumeric(m_baudrate));
 #endif
-			makeFilenameUnique(fname, state);
+			makeFilenameUnique(fname);
 
 			tx_log.create(XsString(fname), true);
 		}

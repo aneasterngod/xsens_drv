@@ -1,0 +1,1 @@
+/usr/bin/g++-7   -std=c++11 -pthread -g  -rdynamic CMakeFiles/xti300_drv.dir/xti300.cpp.o  -o xti300_drv  -L/home/dongshin/code-repository/xti300_driver/build/src -Wl,-rpath,/home/dongshin/code-repository/xti300_driver/build/src libxti300.a libxcommunication.a libxstypes.a 

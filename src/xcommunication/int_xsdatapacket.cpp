@@ -1,4 +1,4 @@
-/*	Copyright (c) 2003-2017 Xsens Technologies B.V. or subsidiaries worldwide.
+/*	Copyright (c) 2003-2016 Xsens Technologies B.V. or subsidiaries worldwide.
 	All rights reserved.
 
 	Redistribution and use in source and binary forms, with or without modification,
@@ -27,10 +27,10 @@
 */
 
 #include <xsens/xstypesconfig.h>
-#include "xcommunication/int_xsdatapacket.h"
-#include "xcommunication/legacydatapacket.h"
-#include "xcommunication/packetfixeddata.h"
-#include "xcommunication/mtwsdidata.h"
+#include "int_xsdatapacket.h"
+#include "legacydatapacket.h"
+#include "packetfixeddata.h"
+#include "mtwsdidata.h"
 #include <xsens/xsbusid.h>
 #include <xsens/xsdatapacket.h>
 #include <xsens/xsmessage.h>

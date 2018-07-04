@@ -1,4 +1,4 @@
-/*	Copyright (c) 2003-2017 Xsens Technologies B.V. or subsidiaries worldwide.
+/*	Copyright (c) 2003-2016 Xsens Technologies B.V. or subsidiaries worldwide.
 	All rights reserved.
 
 	Redistribution and use in source and binary forms, with or without modification,
@@ -27,7 +27,7 @@
 */
 
 #include <xsens/xsthread.h>
-#include "xcommunication/iointerface.h"
+#include "iointerface.h"
 #include <errno.h>
 #ifndef _WIN32
 #	include <unistd.h>		// close

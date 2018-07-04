@@ -1,0 +1,2 @@
+/usr/bin/ar qc libxti300.a  CMakeFiles/xti300.dir/xti_io.cpp.o CMakeFiles/xti300.dir/deviceclass.cpp.o CMakeFiles/xti300.dir/conio.c.o CMakeFiles/xti300.dir/ImuData.cpp.o
+/usr/bin/ranlib libxti300.a
