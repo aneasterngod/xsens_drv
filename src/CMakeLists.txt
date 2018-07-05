@@ -106,7 +106,7 @@ target_link_libraries(xti300_drv
     xti300
 )
 
-
+install (TARGETS xstypes EXPORT xstypes-targets ARCHIVE DESTINATION lib)
 install (TARGETS xcommunication EXPORT xcommunication-targets ARCHIVE DESTINATION lib)
 install (TARGETS xti300 EXPORT xti300-targets ARCHIVE DESTINATION lib)
 
@@ -120,6 +120,96 @@ install (FILES
     DESTINATION include/xti300)
 	
 install (FILES 
+	../include/xsens/pstdint.h
+	../include/xsens/xsanalogindata.h
+	../include/xsens/xsarray.h
+	../include/xsens/xsatomicint.h
+	../include/xsens/xsbaud.h
+	../include/xsens/xsbaudcode.h
+	../include/xsens/xsbaudrate.h
+	../include/xsens/xsbusid.h
+	../include/xsens/xsbytearray.h
+	../include/xsens/xscalibrateddata.h
+	../include/xsens/xscontrolline.h
+	../include/xsens/xscopy.h
+	../include/xsens/xsdataformat.h
+	../include/xsens/xsdataidentifier.h
+	../include/xsens/xsdataidentifiervalue.h
+	../include/xsens/xsdatapacket.h
+	../include/xsens/xsdebugcounters.h
+	../include/xsens/xsdeviceid.h
+	../include/xsens/xsdeviceidarray.h
+	../include/xsens/xsdeviceidlist.h
+	../include/xsens/xsdid.h
+	../include/xsens/xseuler.h
+	../include/xsens/xsexception.h
+	../include/xsens/xsfile.h
+	../include/xsens/xsfilepos.h
+	../include/xsens/xsgpspvtdata.h
+	../include/xsens/xsinforequest.h
+	../include/xsens/xsint64array.h
+	../include/xsens/xsintarray.h
+	../include/xsens/xsintlist.h
+	../include/xsens/xslibraryloader.h
+	../include/xsens/xsmalloc.h
+	../include/xsens/xsmath.h
+	../include/xsens/xsmatrix.h
+	../include/xsens/xsmatrix3x3.h
+	../include/xsens/xsmessage.h
+	../include/xsens/xsmessagearray.h
+	../include/xsens/xsmessagelist.h
+	../include/xsens/xsmutex.h
+	../include/xsens/xsoutputconfiguration.h
+	../include/xsens/xsoutputconfigurationarray.h
+	../include/xsens/xsoutputconfigurationlist.h
+	../include/xsens/xsoutputmode.h
+	../include/xsens/xsoutputsettings.h
+	../include/xsens/xsplatform.h
+	../include/xsens/xsportinfo.h
+	../include/xsens/xsportinfoarray.h
+	../include/xsens/xsportinfolist.h
+	../include/xsens/xspressure.h
+	../include/xsens/xsquaternion.h
+	../include/xsens/xsrange.h
+	../include/xsens/xsrawgnsspvtdata.h
+	../include/xsens/xsrawgnsssatinfo.h
+	../include/xsens/xsrawgpsdop.h
+	../include/xsens/xsrawgpssol.h
+	../include/xsens/xsrawgpssvinfo.h
+	../include/xsens/xsrawgpstimeutc.h
+	../include/xsens/xsresultvalue.h
+	../include/xsens/xsrssi.h
+	../include/xsens/xsscrdata.h
+	../include/xsens/xssdidata.h
+	../include/xsens/xssimpleversion.h
+	../include/xsens/xssnapshot.h
+	../include/xsens/xssocket.h
+	../include/xsens/xsstring.h
+	../include/xsens/xsstringarray.h
+	../include/xsens/xsstringstreaming.h
+	../include/xsens/xssyncfunction.h
+	../include/xsens/xssyncline.h
+	../include/xsens/xssyncpolarity.h
+	../include/xsens/xssyncrole.h
+	../include/xsens/xssyncsetting.h
+	../include/xsens/xssyncsettingarray.h
+	../include/xsens/xssyncsettinglist.h
+	../include/xsens/xsthread.h
+	../include/xsens/xstime.h
+	../include/xsens/xstimestamp.h
+	../include/xsens/xstriggerindicationdata.h
+	../include/xsens/xstypedefs.h
+	../include/xsens/xstypesconfig.h
+	../include/xsens/xstypesdynlib.h
+	../include/xsens/xsushortvector.h
+	../include/xsens/xsutctime.h
+	../include/xsens/xsvector.h
+	../include/xsens/xsvector3.h
+	../include/xsens/xsversion.h
+	../include/xsens/xsxbusmessageid.h
+	DESTINATION include/xsens)
+
+install (FILES 
 	../include/xcommunication/enumerateusbdevices.h
 	../include/xcommunication/int_xsdatapacket.h
 	../include/xcommunication/iointerface.h
@@ -131,7 +221,6 @@ install (FILES
 	../include/xcommunication/packetfixeddata.h
 	../include/xcommunication/packetstamper.h
 	../include/xcommunication/protocolhandler.h
-	../include/xcommunication/rx_tx_log.h
 	../include/xcommunication/serialinterface.h
 	../include/xcommunication/streaminterface.h
 	../include/xcommunication/synclinegmt.h
@@ -141,8 +230,13 @@ install (FILES
 	../include/xcommunication/xslibusb.h
 	../include/xcommunication/xsudev.h
 	../include/xcommunication/xswinusb.h
-  	DESTINATION include/xcommunication)
+	DESTINATION include/xcommunication)
 	
+install (FILES 
+	../src/xstypes/datapacket_p.h
+	../src/xstypes/resource.h
+	DESTINATION include/xstypes)
+
 include(CMakePackageConfigHelpers)
 configure_package_config_file(xti300Config.cmake.in
   ${CMAKE_CURRENT_BINARY_DIR}/xti300Config.cmake

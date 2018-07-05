@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "name": "xti300_driver",
             "type": "cppdbg",
             "request": "launch",
             "program": "/home/dongshin/code-repository/xti300_driver/build/src/xti300_drv",

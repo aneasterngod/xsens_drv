@@ -161,8 +161,8 @@ clean: src/CMakeFiles/xcommunication.dir/clean
 # Target rules for target src/CMakeFiles/xti300.dir
 
 # All Build rule for target.
-src/CMakeFiles/xti300.dir/all: src/CMakeFiles/xstypes.dir/all
 src/CMakeFiles/xti300.dir/all: src/CMakeFiles/xcommunication.dir/all
+src/CMakeFiles/xti300.dir/all: src/CMakeFiles/xstypes.dir/all
 	$(MAKE) -f src/CMakeFiles/xti300.dir/build.make src/CMakeFiles/xti300.dir/depend
 	$(MAKE) -f src/CMakeFiles/xti300.dir/build.make src/CMakeFiles/xti300.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dongshin/code-repository/xti300_driver/build/CMakeFiles --progress-num=65,66,67,68,69 "Built target xti300"
@@ -199,9 +199,9 @@ clean: src/CMakeFiles/xti300.dir/clean
 # Target rules for target src/CMakeFiles/xti300_drv.dir
 
 # All Build rule for target.
-src/CMakeFiles/xti300_drv.dir/all: src/CMakeFiles/xstypes.dir/all
-src/CMakeFiles/xti300_drv.dir/all: src/CMakeFiles/xcommunication.dir/all
 src/CMakeFiles/xti300_drv.dir/all: src/CMakeFiles/xti300.dir/all
+src/CMakeFiles/xti300_drv.dir/all: src/CMakeFiles/xcommunication.dir/all
+src/CMakeFiles/xti300_drv.dir/all: src/CMakeFiles/xstypes.dir/all
 	$(MAKE) -f src/CMakeFiles/xti300_drv.dir/build.make src/CMakeFiles/xti300_drv.dir/depend
 	$(MAKE) -f src/CMakeFiles/xti300_drv.dir/build.make src/CMakeFiles/xti300_drv.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dongshin/code-repository/xti300_driver/build/CMakeFiles --progress-num=70,71 "Built target xti300_drv"
